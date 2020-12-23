@@ -1,0 +1,218 @@
+body {
+    background-color: #054A91;
+    color: #DBE4EE;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: #DBE4EE;
+}
+nav {
+    width: calc(100% - 50px);
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 25px 0px 25px;
+    position: fixed;
+    background-color: rgb(0,0,0,0);
+    z-index: 9;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.logo {
+    width: 120px;
+    height: 72px;
+    background-image: url(../img/logo1.png);
+    background-size: contain;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 60px; 
+    padding: 10px 10px 10px 0px;
+    display: none;
+}
+
+.burger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    margin: 20px 25px 0px 0px;
+    background-size: cover;
+    background-image: url(../img/menu.png);
+    cursor: pointer;
+    display: block;
+}
+
+input[type="checkbox"]  {
+    display: none;
+}
+
+input + .burger + div {
+    display: none;
+}
+
+input:checked + .burger + div {
+    display:block;
+}
+
+.menu-section {
+    font-family: Tahoma;
+    color: #054A91;
+    background-color: #3E7CB1;
+    font-size: 24px;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 20px 5px 20px;
+}
+.title {
+	margin: 0px 0px 0px 0px;
+	padding: 80px 20px 0px 20px;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 30px;
+}
+.galery {
+	width: 100wv;
+	max-width: 1920px;
+	margin: 0px;
+	background-color: #D63AF9;
+}
+.galery-item {
+	width: 100vw;
+	margin: 0vw 0vw 0vw 0vw;
+	transition: all 0.25s ease;
+	display: inline-block; 
+	font-size: 16px;
+	font-family: Tahoma;
+	text-align: center;
+}
+.galery-item:hover{
+	box-shadow: 0px 0px 75px #929292;
+}
+.item-left {
+	width: 40vw;
+	display: inline-block;
+	float: left;
+	margin: 0vw 0vw 0vw 2vw;
+}
+.item-pic{
+	width: 40vw;
+	height: 40vw;
+	display: inline-block;
+	margin: 2vw 0vw 0vw 0vw;
+	background-image: url('../img/himalaya.jpg');
+	background-size: cover;
+}
+.item-soc{
+	width: 100%;
+	height: 6vw;
+	display: inline-block;
+	background-image: url('../img/instagram.png');
+	background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+.item-right {
+	width: 50vw;
+	margin: 0px;
+	padding: 0px 2vw 0px 2vw;
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	font-size: 18px;
+	text-align: left;
+}
+.item-right h1 {
+	margin: 0px 10px 0px 10px;
+	font-size: 26px;
+	text-align: center;
+}
+.item-right h2 {
+	margin: 5px 10px 0px 10px;
+	font-size: 16px;
+	text-align: center;
+}
+.underline {
+	border-bottom: 1px solid;
+}
+.description {
+	padding: 0px 20px 0px 20px;
+	font-size: 20px;
+	text-align: left;	
+}
+.video {
+}
+.video iframe {
+	width: 100vw;
+	height: 55vw;
+}
+.rating-title {
+	margin: 0px 0px 0px 0px;
+	padding: 10px 20px 0px 20px;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 30px;
+}
+.rating1 {
+	font-family: Tahoma;    
+	font-size: 36px;
+	font-weight: bold;	
+	color: #054A91;
+	background-color: #DBE4EE;	
+	height: 50px;	
+	text-align: right;
+	margin: 5px 0px 0px 20px;
+	padding: 5px 10px 0px 20px;
+	display: inline-block; 
+}
+.rating1num {
+	font-family: Tahoma;    
+	font-size: 36px;
+	font-weight: bold;
+	color: #DBE4EE;	
+	height: 50px;	
+	text-align: left;	
+	margin: 0px 0px 0px 0px;	
+	padding: 0px 10px 0px 5px;
+	display: inline-block; 
+}
+
+.rating2 {
+	font-family: Tahoma;    
+	font-size: 36px;	
+	font-weight: bold;
+	color: #F17300;
+	background-color: #000000;
+	height: 50px;
+	text-align: right;
+	margin: 0px 0px 10px 20px;
+	padding: 5px 10px 0px 20px;
+}
+.pictures {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+.pic {	
+	flex: 1 1 auto;
+	width: 29vw;
+	height: 29vw;
+	margin: 2vw 1vw 2vw 1vw;
+	display: inline-block;
+	background-image: url('../img/himalaya.jpg');
+	background-size: cover;	
+	background-color: #434254;
+}
+.map{
+	width: 94vw;
+	margin: 2vw 2vw 2vw 2vw;
+}
+.map iframe{
+	width: 100%;
+	margin: auto;
+	justify-content: center;
+}
